@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 require "config/database.php";
 
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$existing) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Devenir vendeur — Mercato Nova</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -87,13 +87,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$existing) {
         <?php if ($existing['status'] === 'pending'): ?>
         <div class="neon-card" style="text-align:center;padding:50px;">
             <div style="font-size:52px;margin-bottom:16px;">⏳</div>
-            <h2 style="font-family:'Orbitron',sans-serif;color:var(--neon-yellow);">Demande en cours d'examen</h2>
+            <h2 style="font-family:'Rajdhani',sans-serif;color:var(--neon-yellow);">Demande en cours d'examen</h2>
             <p style="color:var(--text-soft);margin-top:12px;">Votre demande a été transmise à l'équipe d'administration.<br>Vous recevrez une notification dès qu'elle sera traitée.</p>
         </div>
         <?php elseif ($existing['status'] === 'refused'): ?>
         <div class="neon-card" style="text-align:center;padding:50px;">
             <div style="font-size:52px;margin-bottom:16px;">❌</div>
-            <h2 style="font-family:'Orbitron',sans-serif;color:#ff6b8a;">Demande refusée</h2>
+            <h2 style="font-family:'Rajdhani',sans-serif;color:#ff6b8a;">Demande refusée</h2>
             <p style="color:var(--text-soft);margin-top:12px;">Votre précédente demande a été refusée. Vous pouvez en soumettre une nouvelle.</p>
         </div>
         <?php endif; ?>
@@ -174,3 +174,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$existing) {
 <?php include "partials/footer.php"; ?>
 </body>
 </html>
+

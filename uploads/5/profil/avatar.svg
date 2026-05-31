@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#070816"/>
+  <circle cx="100" cy="100" r="96" fill="rgb(30,25,9)"/>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#ffd84d" stroke-width="3" opacity="0.9"/>
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ffd84d" stroke-width="1" opacity="0.3"/>
+  <text x="100" y="128"
+        font-family="Rajdhani, Arial, sans-serif"
+        font-size="96" font-weight="700"
+        fill="#ffd84d"
+        text-anchor="middle"
+        style="filter:drop-shadow(0 0 8px #ffd84d)">M</text>
+</svg>

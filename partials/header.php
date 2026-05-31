@@ -10,7 +10,10 @@ if (isset($conn)) {
     $ns = $conn->prepare("SELECT COUNT(*) as c FROM notifications WHERE user_id=? AND is_read=0");
     $ns->bind_param("i", $_SESSION['user_id']);
     $ns->execute();
-    $notif_count = $ns->get_result()->fetch_assoc()['c'] ?? 0;
+    $nsRes = $ns->get_result();
+    $notif_count = $nsRes->fetch_assoc()['c'] ?? 0;
+    $nsRes->free();
+    $ns->close();
 }
 
 $currentMenu = $_GET['menu'] ?? 'Transactions';

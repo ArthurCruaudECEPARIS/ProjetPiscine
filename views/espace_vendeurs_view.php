@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if (session_status() === PHP_SESSION_NONE) session_start();
 require_once __DIR__ . "/../config/database.php";
 
@@ -49,7 +49,7 @@ $activeAuctions = $stmt->get_result()->fetch_assoc()['cnt'] ?? 0;
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Espace Vendeur — Mercato Nova</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -136,3 +136,4 @@ $activeAuctions = $stmt->get_result()->fetch_assoc()['cnt'] ?? 0;
 <?php include __DIR__ . "/../partials/footer.php"; ?>
 </body>
 </html>
+

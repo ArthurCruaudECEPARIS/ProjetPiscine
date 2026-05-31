@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 require "config/database.php";
 
@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_payment'])) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paiement — Mercato Nova</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_payment'])) {
     <?php if($success): ?>
     <div class="neon-card" style="text-align:center;padding:50px;">
         <div style="font-size:60px;margin-bottom:16px;">🎉</div>
-        <h2 style="font-family:'Orbitron',sans-serif;color:var(--neon-green);">Paiement réussi !</h2>
+        <h2 style="font-family:'Rajdhani',sans-serif;color:var(--neon-green);">Paiement réussi !</h2>
         <p style="color:var(--text-soft);margin:12px 0 24px;"><?= htmlspecialchars($success) ?></p>
         <a href="home.php" class="neon-btn" style="display:inline-block;width:auto;padding:13px 30px;text-decoration:none;">Retour au catalogue</a>
         <a href="porte_monnaie_view.php" class="btn-ghost" style="display:inline-block;margin-left:12px;padding:13px 30px;">Voir mes transactions</a>
@@ -229,3 +229,4 @@ document.querySelectorAll('.payment-method').forEach(el => {
 </script>
 </body>
 </html>
+

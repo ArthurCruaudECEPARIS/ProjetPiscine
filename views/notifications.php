@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if (session_status() === PHP_SESSION_NONE) session_start();
 require_once __DIR__ . "/../config/database.php";
 
@@ -57,7 +57,7 @@ $typeIcons = [
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Notifications — Mercato Nova</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -76,7 +76,7 @@ $typeIcons = [
     <?php if (empty($notifications)): ?>
     <div class="neon-card" style="text-align:center;padding:60px;">
         <div style="font-size:48px;margin-bottom:16px;">🔔</div>
-        <h2 style="font-family:'Orbitron',sans-serif;color:var(--neon-blue);">Aucune notification</h2>
+        <h2 style="font-family:'Rajdhani',sans-serif;color:var(--neon-blue);">Aucune notification</h2>
         <p style="color:var(--text-soft);margin-top:12px;">Vos notifications apparaîtront ici.</p>
     </div>
     <?php else: ?>
@@ -108,3 +108,4 @@ $typeIcons = [
 <?php include __DIR__ . "/../partials/footer.php"; ?>
 </body>
 </html>
+

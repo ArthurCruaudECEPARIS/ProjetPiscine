@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 require "config/database.php";
 
@@ -57,7 +57,7 @@ $error   = $_GET['error'] ?? null;
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= htmlspecialchars($product['title']) ?> — Mercato Nova</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -84,7 +84,7 @@ $error   = $_GET['error'] ?? null;
             ?>
             <span class="category-badge <?= $b[0] ?>"><?= $b[1] ?? '' ?></span>
 
-            <h1 style="font-family:'Orbitron',sans-serif;font-size:28px;color:white;text-shadow:0 0 10px var(--neon-blue);margin:12px 0;"><?= htmlspecialchars($product['title']) ?></h1>
+            <h1 style="font-family:'Rajdhani',sans-serif;font-size:28px;color:white;text-shadow:0 0 10px var(--neon-blue);margin:12px 0;"><?= htmlspecialchars($product['title']) ?></h1>
 
             <p style="color:var(--text-soft);margin-bottom:6px;">Vendu par : <span style="color:var(--neon-blue);"><?= htmlspecialchars($product['seller_name'] ?? 'Vendeur') ?></span></p>
 
@@ -188,3 +188,4 @@ function showToast(msg) {
 </script>
 </body>
 </html>
+

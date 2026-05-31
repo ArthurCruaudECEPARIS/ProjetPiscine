@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if (session_status() === PHP_SESSION_NONE) session_start();
 require_once __DIR__ . "/../config/database.php";
 
@@ -51,7 +51,7 @@ $userSolde = $stmt->get_result()->fetch_assoc()['solde'] ?? 0;
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mon panier — Mercato Nova</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -64,7 +64,7 @@ $userSolde = $stmt->get_result()->fetch_assoc()['solde'] ?? 0;
     <?php if (empty($items)): ?>
     <div class="neon-card" style="text-align:center;padding:60px;">
         <div style="font-size:48px;margin-bottom:16px;">🛒</div>
-        <h2 style="font-family:'Orbitron',sans-serif;color:var(--neon-blue);">Panier vide</h2>
+        <h2 style="font-family:'Rajdhani',sans-serif;color:var(--neon-blue);">Panier vide</h2>
         <p style="color:var(--text-soft);margin:12px 0 24px;">Aucun produit dans votre panier.</p>
         <a href="home.php" class="neon-btn" style="display:inline-block;width:auto;padding:13px 30px;text-decoration:none;">Continuer mes achats</a>
     </div>
@@ -111,7 +111,7 @@ $userSolde = $stmt->get_result()->fetch_assoc()['solde'] ?? 0;
 
         <!-- Summary -->
         <div class="neon-card">
-            <h2 style="font-family:'Orbitron',sans-serif;font-size:18px;color:var(--neon-blue);margin-bottom:20px;">Récapitulatif</h2>
+            <h2 style="font-family:'Rajdhani',sans-serif;font-size:18px;color:var(--neon-blue);margin-bottom:20px;">Récapitulatif</h2>
             <div style="display:flex;justify-content:space-between;margin-bottom:12px;color:var(--text-soft);">
                 <span>Sous-total</span><span style="color:white;"><?= number_format($total,2,',',' ') ?> €</span>
             </div>
@@ -141,3 +141,4 @@ $userSolde = $stmt->get_result()->fetch_assoc()['solde'] ?? 0;
 <?php include __DIR__ . "/../partials/footer.php"; ?>
 </body>
 </html>
+

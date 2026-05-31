@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 require "config/database.php";
 
@@ -181,7 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $nego['status'] === 'open') {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Négociation — <?= htmlspecialchars($nego['product_title']) ?></title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -197,7 +197,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $nego['status'] === 'open') {
     <div class="neon-card" style="margin-bottom:20px;">
         <div style="display:flex;justify-content:space-between;align-items:center;">
             <div>
-                <h2 style="font-family:'Orbitron',sans-serif;font-size:18px;color:white;"><?= htmlspecialchars($nego['product_title']) ?></h2>
+                <h2 style="font-family:'Rajdhani',sans-serif;font-size:18px;color:white;"><?= htmlspecialchars($nego['product_title']) ?></h2>
                 <p style="color:var(--text-soft);font-size:13px;margin-top:4px;">
                     Prix initial : <?= number_format($nego['product_price'],2,',',' ') ?> €
                     · Acheteur : <?= htmlspecialchars($nego['buyer_name']) ?>
@@ -316,3 +316,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $nego['status'] === 'open') {
 <?php include "partials/footer.php"; ?>
 </body>
 </html>
+

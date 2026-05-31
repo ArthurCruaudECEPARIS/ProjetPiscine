@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 require "config/database.php";
 
@@ -77,7 +77,7 @@ $privLabel = ['Utilisateur','Modérateur','Administrateur','Super Admin'][$curre
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mon profil — Mercato Nova</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -98,7 +98,7 @@ $privLabel = ['Utilisateur','Modérateur','Administrateur','Super Admin'][$curre
                 <img src="<?= !empty($currentUser['profile_image']) ? htmlspecialchars($currentUser['profile_image']) : 'assets/default_user_image.png' ?>" alt="Avatar">
             </div>
             <div>
-                <h2 style="font-family:'Orbitron',sans-serif;font-size:20px;color:white;"><?= htmlspecialchars($currentUser['username']) ?></h2>
+                <h2 style="font-family:'Rajdhani',sans-serif;font-size:20px;color:white;"><?= htmlspecialchars($currentUser['username']) ?></h2>
                 <p style="color:var(--neon-blue);font-size:13px;margin-top:4px;"><?= $roleLabel ?> · <?= $privLabel ?></p>
                 <p style="color:var(--text-soft);font-size:12px;margin-top:4px;">Membre depuis le <?= date('d/m/Y', strtotime($currentUser['created_at'])) ?></p>
                 <div style="margin-top:10px;">
@@ -146,3 +146,4 @@ $privLabel = ['Utilisateur','Modérateur','Administrateur','Super Admin'][$curre
 <?php include "partials/footer.php"; ?>
 </body>
 </html>
+

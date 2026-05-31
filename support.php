@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 require "config/database.php";
 if (!isset($_SESSION['user_id'])) { header("Location: auth/login.php"); exit(); }
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Support — Mercato Nova</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php if ($success): ?>
     <div class="neon-card" style="text-align:center;padding:40px;margin-bottom:24px;">
         <div style="font-size:52px;margin-bottom:16px;">✅</div>
-        <h2 style="font-family:'Orbitron',sans-serif;color:var(--neon-green);">Message envoyé !</h2>
+        <h2 style="font-family:'Rajdhani',sans-serif;color:var(--neon-green);">Message envoyé !</h2>
         <p style="color:var(--text-soft);margin-top:12px;"><?= htmlspecialchars($success) ?></p>
         <a href="home.php?menu=Notifications" class="neon-btn" style="display:inline-block;width:auto;padding:12px 24px;text-decoration:none;margin-top:20px;">Voir mes notifications</a>
     </div>
@@ -169,3 +169,4 @@ details[open] summary span { transform:rotate(45deg); display:inline-block; tran
 </style>
 </body>
 </html>
+

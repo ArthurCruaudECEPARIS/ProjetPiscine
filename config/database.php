@@ -1,7 +1,7 @@
 <?php
 
 $host     = "localhost";
-$dbname   = "mercato_nova_db";
+$dbname   = "Game_Corner_DB";
 $username = "root";
 $password = "";
 
